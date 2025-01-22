@@ -315,7 +315,7 @@ class Command:
 
         if self.plugin.get_settings().get(['show_external_ip'], merged=True) != 'off':
             builder.textfield.append(
-                TextField(title='External IP', text=self.plugin.get_external_ip_address(), inline=True))
+                TextField(title='External IP', text='XXX.XXX.XXX.XXX', inline=True))
 
         operational = self.plugin.get_printer().is_operational()
         builder.textfield.append(TextField(title='Operational', text='Yes' if operational else 'No', inline=True))
