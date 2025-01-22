@@ -61,7 +61,7 @@ class DiscordRemotePlugin(octoprint.plugin.EventHandlerPlugin,
                 "enabled": True,
                 "with_snapshot": False,
                 "message": "⏰ I just woke up! What are we gonna print today?\n"
-                           "Local IP: {ipaddr} External IP: {externaddr}"
+                           "Local IP: {ipaddr} External IP: XXX.XXX.XXX.XXX"
             },
             "shutdown": {
                 "name": "Octoprint Shutdown",
