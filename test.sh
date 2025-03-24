@@ -18,5 +18,5 @@ ${PYTHON} -m pip install --upgrade --no-cache-dir https://github.com/OctoPrint/O
 ${PYTHON} -m pip uninstall OctoPrint-DiscordRemote -y
 ${PYTHON} -m pip install .
 ${PYTHON} configtest.py
-${PYTHON} -m webbrowser -t http://127.0.0.1:5000
-octoprint serve -b testconfig
+${PYTHON} -m webbrowser -t http://127.0.0.1:5001
+octoprint serve -b testconfig --port 5001
