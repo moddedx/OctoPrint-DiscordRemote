@@ -131,14 +131,14 @@
                 If you change this setting, be sure to choose a character that is not used often (no alphanumerics).") }}
             </small>
         </div>
+        <div style="clear:both">
+            <small>{{ _("Whitelist for allowed GCODES to send when using the /gcode command. Comma separated values.") }}</small>
+        </div>
         <div class="control-group">
             <label class="control-label">{{ _('GCODE allowed') }}</label>
             <div class="controls">
                 <input type="text" class="input-block-level" data-bind="value: settings.plugins.discordremote.allowed_gcode"/>
             </div>
-        </div>
-        <div style="clear:both">
-            <small>{{ _("Whitelist for allowed GCODES to send when using the /gcode command. Comma separated values.") }}</small>
         </div>
         <div class="control-group">
             <label class="control-label">{{ _('Show Local IP') }}</label>
@@ -173,6 +173,12 @@
                        data-bind="checked: settings.plugins.discordremote.show_external_ip"/> Off
                 </label>
 
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">{{ _('Hostname') }}</label>
+            <div class="controls">
+                <input type="text" class="input-block-level" data-bind="value: settings.plugins.discordremote.hostname"/>
             </div>
         </div>
         <div class="control-group">
